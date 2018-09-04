@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Tile.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +91,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayPiece.Architect.cs" />
+    <Compile Include="PlayPiece.Cart.cs" />
+    <Compile Include="PlayPiece.Chief.cs" />
+    <Compile Include="PlayPiece.Count.cs" />
+    <Compile Include="PlayPiece.cs" />
+    <Compile Include="PlayPiece.ManorFarm.cs" />
+    <Compile Include="PlayPiece.Mayor.cs" />
+    <Compile Include="PlayPiece.Pig.cs" />
+    <Compile Include="PlayPiece.Serf.cs" />
+    <Compile Include="PlayPiece.Shepherd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
