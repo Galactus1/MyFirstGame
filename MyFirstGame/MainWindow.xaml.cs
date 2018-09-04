@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MyFirstGame
+namespace Carcassonne
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,8 @@ namespace MyFirstGame
         public MainWindow()
         {
             InitializeComponent();
+            this.WindowStyle = WindowStyle.None;
+            this.WindowState = WindowState.Maximized;
         }
     }
 }
