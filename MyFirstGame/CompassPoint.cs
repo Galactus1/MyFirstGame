@@ -75,5 +75,82 @@ namespace Carcassonne
         {
             Direction = SubCardinal.Direction;
         }
+        /// <summary>
+        /// Rotates the direction clockwise.
+        /// </summary>
+        public virtual void RotateDirectionClockwise()
+        {
+            switch (direction)
+            {
+                case RotationDirection.North:
+                    direction = RotationDirection.East;
+                    break;
+                case RotationDirection.East:
+                    direction = RotationDirection.South;
+                    break;
+                case RotationDirection.South:
+                    direction = RotationDirection.West;
+                    break;
+                case RotationDirection.West:
+                    direction = RotationDirection.North;
+                    break;
+            }
+        }
+        /// <summary>
+        /// Rotates the direction right. Equivalent to RotateDirectionClockwise.
+        /// </summary>
+        public void RotateDirectionRight()
+        {
+            RotateDirectionClockwise();
+        }
+        /// <summary>
+        /// Rotates the direction anticlockwise.
+        /// </summary>
+        public virtual void RotateDirectionAntiClockwise()
+        {
+            switch (direction)
+            {
+                case RotationDirection.North:
+                    direction = RotationDirection.West;
+                    break;
+                case RotationDirection.East:
+                    direction = RotationDirection.North;
+                    break;
+                case RotationDirection.South:
+                    direction = RotationDirection.East;
+                    break;
+                case RotationDirection.West:
+                    direction = RotationDirection.South;
+                    break;
+            }
+        }
+        /// <summary>
+        /// Rotates the direction left.
+        /// </summary>
+        public void RotateDirectionLeft()
+        {
+            RotateDirectionAntiClockwise();
+        }
+        /// <summary>
+        /// Flips the direction.
+        /// </summary>
+        public virtual void FlipDirection()
+        {
+            switch (direction)
+            {
+                case RotationDirection.North:
+                    direction = RotationDirection.South;
+                    break;
+                case RotationDirection.East:
+                    direction = RotationDirection.West;
+                    break;
+                case RotationDirection.South:
+                    direction = RotationDirection.North;
+                    break;
+                case RotationDirection.West:
+                    direction = RotationDirection.East;
+                    break;
+            }
+        }
     }
 }

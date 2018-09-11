@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Carcassonne
 {
-    public class Hill : Landmark
+    public class AddOn
     {
     }
 }

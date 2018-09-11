@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddOn.cs" />
     <Compile Include="Tile.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -72,14 +73,14 @@
     <Compile Include="CompassPoint.SubCardinal.cs" />
     <Compile Include="Enum.RotationDirection.cs" />
     <Compile Include="FieldPosition.cs" />
-    <Compile Include="Landmark.Cathedral.cs" />
-    <Compile Include="Landmark.Crest.cs" />
+    <Compile Include="AddOn.Cathedral.cs" />
+    <Compile Include="AddOn.Crest.cs" />
     <Compile Include="Landmark.cs" />
     <Compile Include="Landmark.CultusPlace.cs" />
-    <Compile Include="Landmark.Hill.cs" />
-    <Compile Include="Landmark.Inn.cs" />
+    <Compile Include="AddOn.Hill.cs" />
+    <Compile Include="AddOn.Inn.cs" />
     <Compile Include="Landmark.Monastery.cs" />
-    <Compile Include="Landmark.Vineyard.cs" />
+    <Compile Include="AddOn.Vineyard.cs" />
     <Compile Include="Landscape.City.cs" />
     <Compile Include="Landscape.cs" />
     <Compile Include="Landscape.Pasture.cs" />

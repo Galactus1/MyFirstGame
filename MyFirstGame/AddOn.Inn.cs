@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Carcassonne
 {
-    public class Inn : Landmark
+    public class Inn : AddOn
     {
     }
 }

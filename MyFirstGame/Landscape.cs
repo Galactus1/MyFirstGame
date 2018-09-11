@@ -32,7 +32,7 @@ namespace Carcassonne
         /// Adds the border.
         /// </summary>
         /// <param name="Border">The border.</param>
-        public void AddBorder(CompassPoint Border)
+        public virtual void AddBorder(CompassPoint Border)
         {
             Borders.Add(Border);
         }
